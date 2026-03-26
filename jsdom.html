@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- getelementbyid -->
+    <!-- <h1 id="p">H1 tag</h1>
+    <button onclick="on()">click here</button>
+    <script> 
+     function on(){
+        var v=document.getElementById("p");
+        v.style.color="red";
+        v.style.background="black";
+     document.getElementById("p").innerHTML="sudarmani is good boy";
+     }</script> -->
+  
+    <!-- getelementbytagname -->
+    
+    <!-- <h1 >addition</h1>
+    <p></p>
+    <h1>subtraction</h1>
+    <p></p>
+    <h1>multiplication</h1>
+    <p></p>
+    <h1>division</h1>
+    <p></p>
+    <button onclick="on()" id="p">cllick here</button>
+    <script>
+         var v1=2,v2=3;
+         var add=v1+v2;
+         var sub=v1-v2;
+         var mul=v1*v2;
+         var div=v1/v2;
+        function on()
+        {
+            var k=document.getElementsByTagName("p");
+            k[0].innerHTML=add;
+            k[1].innerHTML=sub;
+            k[2].innerHTML=mul;
+            k[3].innerHTML=div;
+
+        }</script> -->
+
+    <!-- getelementbyclassname -->
+<!-- 
+    <h1 class="demo">addition</h1>
+    <h1 class="demo">subtraction</h1>
+    <h1 class="demo">multiplication</h1>
+    <h1 class="demo">division</h1>
+     <button onclick="on()">click here</button>
+     <script>
+        function on(){
+        var v=document.getElementsByClassName("demo");
+        v[0].style.background="red";
+        v[1].style.background="red";
+        v[2].style.background="red";
+        v[3].style.background="red";
+        for(var i=0;i<v.length;i++)
+        {
+            v[i].style.color="#fff";
+        }
+        }</script> -->
+ 
+    <!-- queryselector and all -->
+
+     <!-- <div id="q">
+        <h1 id="p">sudar</h1>
+        <h1 class="p1">mani</h1>
+        <h1 id="p2">muthu</h1>
+        <h1 id="p3">thangam</h1>
+        <h1 class="p4">gayuma</h1>
+        <button id="b" onclick="on()">click me</button>
+     </div>
+     <script>
+      function on()
+      {
+        var v=document.querySelector("#p");
+        v.style.color="red";
+        var v1=document.querySelector(".p1");
+        v1.style.color="blue";
+        var v2=document.querySelector("div>#p2").style.color="yellow";
+        var v3=document.querySelector("div>#p3").style.background="lightblue";
+        var v4=document.querySelector(".p4").style.color="red";
+        var q=document.querySelectorAll("#q");
+        q[0].style.background="black";
+        for(i=0;i<q.length;i++)
+        {
+            q[i].style.color="red";
+        }
+      }   </script>-->
+    
+    <!-- src element -->
+
+      <!-- <img id="img" src="img1.jpg.jpg" width="250px" height="250px"><br>
+      <button onclick="om()">click here </button>
+      <script>
+        function om()
+    {
+        document.getElementById("img").src="img2.jpg.jpg";
+    }  </script>-->
+  
+    <!-- innerHTML and innertext -->
+    
+    <!-- <h1 id="in">innerHTML<strong>outerHTML</strong></h1>
+    <button onclick="on()">click here</button>
+    <script>
+        // function on()
+        // {
+        // var v=document.getElementById("in");
+        // console.log(v.outerHTML)
+        // }
+        function on()
+        {
+            var v=document.getElementById("in");
+            console.log(v.innerText);
+            console.log(v.textContent)
+        }</script> -->
+ 
+    <!-- classlist add remove method -->
+    <!-- <h1 id="h" >sudarmani</h1>
+    <button onclick="on()">click here</button>
+    <script>
+        // function on()
+        // {
+        // document.getElementById("h").classList.add("c1","c2","c3");
+        // document.getElementById("h").classList.remove("c1");
+        // document.getElementById("h").classList.toggle("c1");
+        // }
+        function on()
+        {
+            // var a=document.getElementById("h").classList.length;
+            // document.getElementById("h").innerHTML=a;
+            var a1=document.getElementById("h").classList.item(0);
+            document.getElementById("h").innerHTML=a1;
+        } </script>-->
+
+        <!-- traversal in dom -->
+        <!-- <div id="parent">
+            <h1>html</h1>
+            <h1>css</h1>
+            <h1>js</h1>
+        </div>
+
+            <button id="c" onclick="on()">click here</button>
+      
+        <script>
+            //parent to child
+           function on()
+           {
+            var parent=document.getElementById("parent");
+            // var child=parent.childNodes[1];
+            // var child1=parent.childNodes[3];
+            // child.style.color="blue";
+            // child1.style.color="red";
+            // var child=parent.firstElementChild;
+            var child=parent.lastElementChild;
+            child.style.color="red";
+           }
+        </script>-->
+        <!-- <div>
+            <h1 >html</h1>
+            <h1 id="h1">css</h1>
+            <h1>js</h1>
+        </div>
+        <button onclick="on()">click here</button>
+        <script>
+            //child to parent
+            function on()
+            {
+                var child=document.getElementById("h1");
+                // var parent=child.parentNode;
+                // parent.style.color="red";
+                // var parent=child.previousElementSibling;
+                var parent=child.nextElementSibling;
+                parent.style.color="red";
+            }
+        </script> -->
+
+        <!-- addeven listner and remove listner -->
+        <!-- <div id="p1">
+            <h1 id="h1">parent1</h1>
+        </div>
+        <div id="p2">
+            <h1 id="h2">parent2</h1>
+        </div>
+       <script>
+        var v1=document.getElementById("p1");
+        var v2=document.getElementById("h1");
+        var v3=document.getElementById("p2");
+        var v4=document.getElementById("h2");
+        v3.addEventListener("click",f);
+        function f()
+        {
+         v1.style.color="red";
+         v4.style.color="pink";
+        }
+        v3.removeEventListener("click",f);
+       </script> -->
+
+       <!-- bom -->
+       <!-- <div>
+        <h1 id="h1">browser objcet model</h1>
+       </div>
+       <script>
+        //window height and width
+        // var h=window.innerHeight;
+        // var w=window.innerWidth;
+        // document.getElementById("h1").innerHTML=" height " + h  + " width " + w ;
+       </script> -->
+
+       <!-- <div>
+        <button onclick="op()">click open</button>
+        <button onclick="oc()">click close</button>
+       </div>
+       <script>
+        function op()
+        {
+            window.open("https://www.google.com","newwindow");
+            window.moveTo(200,700);
+            window.focus();
+        }
+        function  oc()
+        {
+            window.close();
+        }
+       </script> -->
+
+       <!-- screen object -->
+       <!-- <div id="p1">
+        <button onclick="on()">screen</button>
+       </div>
+       <script>
+        function on()
+        {
+             document.getElementById("p1").innerHTML=screen.height;
+            document.getElementById("p1").innerHTML=screen.availHeight;
+            document.getElementById("p1").innerHTML=screen.availWidth;
+            document.getElementById("p1").innerHTML=screen.width;
+        }
+       </script> -->
+
+       <!-- screen location -->
+       <!-- <div id="p1">
+        <button onclick="on()">screen</button>
+       </div>
+       <script>
+        function on()
+        {
+        // document.getElementById("p1").innerHTML=window.location.href;
+        // document.getElementById("p1").innerHTML=window.location.hostname;
+        // document.getElementById("p1").innerHTML=window.location.pathname;
+        //document.getElementById("p1").innerHTML=window.location.port;
+        //document.getElementById("p1").innerHTML=window.location.protocol;
+      }
+       </script> -->
+
+       <!-- history backward and frontward -->
+     <!-- <div>
+         <button onclick="on()">History</button>
+         <button onclick="oc()">History out</button>
+     </div>
+     <script>
+        function on()
+        {
+            window.location.assign("http://www.google.com");
+           window.history.back();
+        }
+        function oc()
+        {
+            window.history.forward();
+        }
+     </script> -->
+
+       <!-- navigator  -->
+       <!-- <div>
+        <button id="h1">navigator</button>
+       </div>
+       <script>
+        // document.getElementById("h1").innerHTML=window.navigator.userAgent;
+        // document.getElementById("h1").innerHTML=window.navigator.cookieEnabled;
+        // document.getElementById("h1").innerHTML=window.navigator.onLine;
+        // document.getElementById("h1").innerHTML=window.navigator.language;
+        // document.getElementById("h1").innerHTML=window.navigator.clipboard;
+        // document.getElementById("h1").innerHTML=window.navigator.pdfViewerEnabled;
+       </script> -->
+
+       <!-- confirm and prompt ,alert -->
+      <!-- <div>
+        <p id="p1"></p>
+        <button onclick="on()">submit here</button>
+      </div>
+      <script>
+        // function on()
+        // {
+        //     alert("hii bro");
+        // }
+    //   function on()
+    //   {
+    //     var txt;
+    //     if(confirm("enter your name"))
+    //     {
+    //         txt="text your name";
+    //     }else{
+    //         txt="not text  your name";
+    //     }
+    //     document.getElementById("p1").innerHTML=txt;
+    //   }
+    // function on()
+    // {
+    //     var txt;
+    //     var person=prompt("enter your name");
+    //     if(person==0 || person==" ")
+    //     {
+    //         txt="not present the name";
+    //     }else{
+    //         txt="present the name "
+    //     }
+    //     document.getElementById("p1").innerHTML="hii " + person + " welcome the js";
+    // }
+    //   </script> -->
+    
+    <!-- timing events -->
+  
+    <!-- <p id="h1"></p>
+    <button onclick="stop1()">stop click here</button>
+    <script>
+    t=setInterval(fun,1000);
+    function fun()
+    {   var date=new Date();
+        document.getElementById("h1").innerHTML=date.toLocaleTimeString();
+    }
+    function stop1()
+    {
+        clearInterval(t);
+    }
+    </script> -->
+    <p id="h1"></p>
+    <button onclick="off()">stop here</button>
+    <script>
+        setTimeout(fun,1000);
+        function fun()
+        {
+            document.getElementById("h1").innerHTML=new Date();
+        }
+        function off()
+        {
+            clearTimeout(setTimeout);
+        }
+    </script>
+</body> 
+</html>

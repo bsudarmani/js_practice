@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //alert message
+    //   alert("hello world");   
+    //   alert(4+5);
+    //   alert(5-1);
+
+     // console.log()
+    //   alert("Im a good boy");
+    //   console.log("Im a good boy");
+
+    //undefined
+    // let name;
+    // console.log(name);
+
+    //let keyword
+    // let n=10;
+    // let m=13;
+    // console.log(n+m);
+
+    //const keyword
+    // const name="sudar";
+    // let msg="My name "+ name +" Im web devolper";
+    // console.log(msg);
+    // const name1="thangam";
+    // let name2="muthukumar";
+    // let msg2="My name is  " + name1 + "  My friend name is " + name2 ;
+    // console.log(msg2);
+
+    //data type
+    //primitive  -  non primitive
+    //  const name="sudar";
+    // var num=24;
+    // console.log(name,num);
+    // let is=true;
+    // let un=undefined;
+    // let n=null;
+    // n=12;
+    // un=34;
+    // let msg="My name is " + name + "my age is " + num + " is " + is +" un " +un + " n " + n;
+    // console.log(msg);
+ 
+//     object
+//     let person={
+//         name:"sudar",
+//         age:16,
+//         gender:"male",
+//         address:"rajapalayam",
+//      }
+//     person.age=26;
+//        dot . notation
+//      console.log(person.name)
+//     console.log(person.name,person.age,person.gender,person.address);
+//     [] bracket notation
+//    person.address=['ramalingapuram'];
+//    console.log(person['address']);
+
+//multiple object using
+// let person={
+//     name:"sudar",
+//     age:16,
+//     sibilings:{
+//       brother:{
+//        b1:"vijay",
+//       },
+//       sisters:{
+//        s1:"gayu",
+//     }
+//  }
+// }
+// console.log(person.sibilings.brother);
+
+// //array with js
+// let colors=['samantha','nayan','priya'];
+// colors[4]='abirami'
+// console.log(colors[3]);
+
+//function with js
+//    function grettings(city,salary,comapany){  
+//    const name="sudar";
+//    let msg="My name "+ name +" Im web devolper in  "  + city + " salary " + salary + "  working in company  " +comapany;
+//   console.log(msg);
+//   }
+//  grettings("chennai",15000,"zap comapany");
+
+
+//equality & ternary operators
+ //difference between compare and equality
+//  let num=1;
+//  let name="1";
+//  if(num==name)//val==val
+//  {
+//     console.log("true");
+//  }
+//  if(num===name)//data===val
+//  {
+//     console.log("true");
+//  }
+// ternary operator
+// let val1=23;
+// let  val2=43;
+// let result=val1>val2?val1:val2;
+// console.log(result);
+
+//date and time method
+// let time=new Date();
+// console.log(time.getMonth());
+// console.log(time.getMinutes());
+
+// //js with loops for-in for-of for-each
+
+// const person={
+//     name:"sudar",
+//     age:18,
+//     gender:"male"
+// }
+// for(let key in person)
+// {
+//     // console.log(person.age); single value
+//     //console.log("key : "  + key); type name
+//     //console.log(person[key]); for in loop
+// }
+
+//for of loop
+//    const color=['read','write','fetch','open','close'];
+//    for(let key of color)
+//    {
+//     console.log(key);// value console
+//     console.log(color[4]);
+//    }
+//    for(let key1 in color){
+//     console.log(key1); //index console
+//     console.log(color[4]);
+
+//    }
+
+// //oops-noramal using 
+// const name="sudar";
+// let age=45;
+// let city="nellai";
+// let name1="gayuma";
+// function direct()
+// {
+// let msg="my name  is  ${name}   my age is   ${age}   Im living in   ${city } my friend name is   ${ name1}",
+// console.log(msg);
+// }
+// direct();
+
+ 
+// //oops uusing object in template iterals 
+//     let person={
+//         name:"sudar",
+//         age:16,
+//         gender:"male",
+//         address:"rajapalayam",
+//         greeting:function()
+//     {
+      
+//  let msg= `my name is ${this.name}   my age is  ${this.age}   Im lived in     ${this.city }` 
+//      console.log(msg);
+//     }
+//  }
+//   person.greeting();
+
+//factory function
+// function createperson(name)
+// {
+//     return{
+//         name,
+//         gretting()
+//         {
+//             let msg=`my name is ${this.name} `
+//             console.log(msg);
+//         }
+
+//     }
+// }
+// let anbu=new createperson('sudar');
+// anbu.gretting();
+// let sudar=new createperson('thangam');
+// sudar.gretting();
+
+//constuctor
+// function person(name){
+//   this.name=name;
+//   this.greeting=function(name)
+//   {
+//     let msg=`my name is ${this.name} in rajapalyam`;
+//     console.log(msg);
+//   }
+// }
+// let sudar=new person('sudar');
+// sudar.greeting();
+
+//Dynamic object
+// const person={
+//   name:"sudar",
+// }
+// person.age=13;
+// person.city="rajaplayam",
+// person.greeting=function(){}
+// delete person.age;
+// delete person.city;
+// delete person.greeting;
+// console.log(person);
+
+//constructor propertices
+// let name="anbu";//name=new("anbu");
+// console.log(name);
+
+//primitive and refrence type
+// let x=10;
+// console.log(x);
+// let person={
+//   value:10,
+// }
+// console.log(person.value);
+// person.value2=person.value;
+// person.value2=20;
+// console.log(person.value2);
+
+// let x=5;
+// function v(x)
+// {
+//   x++;
+// console.log(x);
+
+// }
+// v(x);
+// console.log(x);
+
+// let x={
+//   value:5,
+// };
+// function v(value)
+// {
+// x.value++;
+// }
+// console.log(x.value);
+// v(x.value);
+// console.log(x.value);
+
+//seacrch the particular element
+// let user={
+//   name:"sudar",
+//   getElement()
+//   {
+//     let msg=`My name is ${this.name}`
+//     consol.log(msg);
+//   }
+// }
+// if('name' in user)
+// {
+//   console.log("yes");
+// }
+// else
+// {
+//   cosnole.log("No");
+// }
+
+//coloning operator or speard operator
+// const  user={
+//   name:"sudar",
+//   greeting()
+//   {
+//    let msg=`my name is ${name}`;
+//    console.log(msg);
+//     }
+// }
+// //let another=user;
+// //let another=Object.assign({age:23,city:rajapalayam},user);
+// let another={...user}
+// console.log(another);
+
+//math build in function
+//slet sum=Math.round(1.3095473890366739);
+//let sum=Math.random();
+//  let sum=Math.min(12,23,25,0);
+// let sum=Math.max(43,67,78,90);
+// let marks=[10,20,30,40,50,60];
+// let sum=Math.max(...marks)
+// console.log(sum);
+
+
+//string object
+// let name="sudar";
+// console.log(name.charAt(0));
+// console.log(name.length);
+// console.log(name.concat("mani"));
+// console.log(name.indexOf('d'));
+// console.log(name.repeat(2));
+// console.log(name.replace("sudar","rocky"));
+// console.log(name.toLowerCase());
+// console.log(name.toUpperCase());
+// console.log(name.split('',1));
+// console.log(name.substr(3));
+// console.log(name.trim());
+// console.log(name.trimStart());
+// console.log(name.trimEnd());
+
+//js date
+// const data=new Date();
+// console.log(data.getDate());
+// console.log(data.getDay());
+// console.log(data.setyear(2006));
+
+//array in depth
+// let sudar=['s','u','d'];
+// console.log(sudar);
+
+//class using js
+// class student{
+//     constructor(name,age,city){
+//      this.name=name;
+//      this.age=age;
+//      this.city=city;
+//     }
+//     Apple()
+//     {
+//         let msg=`My name is ${this.name} age is ${this.age} lived in ${this.city}`;
+//         console.log(msg);
+//     }
+// }
+// let sudar=new student("sudar",16,"rajaplayam");
+// sudar.Apple();
+// let sudar1=new student("mani",35,"rajai");
+// sudar1.Apple();
+
+
+// push pop shift unshift
+// const number=["sudar","thangam","muthu","virat","dhoni"];
+// number[4]="jadeja";
+// number.push("jadeja");
+// number.pop("jadeja")
+// number.unshift("jadeja");
+// number.shift("jadeja");
+// number.splice(3,0,"sudar1");
+// console.log(number);
+
+
+//find the value
+// const number=["red","yellow","pink","black","blue"];
+// // console.log(number.indexOf("yellow"));
+// console.log(number.lastIndexOf("yellow")!==1);
+// console.log(number.indexOf("pink")!==1);
+// console.log(number.includes("yellow"));
+
+
+//find method and findindex method
+// const order=[
+//     {id:1,food:"idly",quality:"good"},
+//     {id:2,food:"uppuma",quality:"normal"},
+// ]
+// // let result=order.find(function(value)
+// // {
+// //     return value.food==="uppuma";
+// // })
+// // console.log(result);
+// let result=order.findIndex(function(value)
+// {
+//   return value.food==="maagi";
+// });
+// console.log(result);
+
+//arrow operator
+// const order=[
+//    {id:1,food:"idly",quality:"good"},
+//    {id:2,food:"uppuma",quality:"normal"},
+// ]
+// let result=order.find((value)=>value.food==="idly");
+// console.log(result);
+
+// //emptying in array with js
+// let number=[10,20,30];
+// // number=[];
+// // number.length=0;
+// // number.splice(0,4,0)
+
+// console.log(number);
+
+//combaining and slice
+// const first=["maggi","beans","carrot","salt"];
+// const second=["water","powder","egg"];
+// let result=first.concat(second);
+// console.log(result);
+// let extract=first.slice(2,3);
+// console.log(extract);
+
+//spread operator[...]
+// const r1=["maggi","salt","water"];
+// const r2=["masala","matchbox","eggs"];
+// let result=[...r1,"spoon",...r2];
+// console.log(result);
+
+//iteration in js
+// const number1=['wakep','walking','bathroom','tea'];
+// for(let key in number1)
+// {
+//     console.log(key);
+// }
+// for(let key of number1)
+// {
+//     console.log(key);
+// }
+// let result=number1.forEach((value)=>console.log(value));
+
+
+//joining and spliting
+// const venpongal=["rice","water","milaghu","parupu"];
+// let r1=venpongal.join(" , ");
+// console.log(r1);
+// let r2=venpongal.join("'s  ");
+// console.log(r2);
+
+//sort in array
+// const num1=[1,8,6,3,5];
+// result=num1.sort((value)=> console.log(value));
+// result=num1.sort();
+// console.log(result);
+// result1=num1.reverse()
+// console.log(result1);
+
+// const num1=[1,8,6,3,5];
+// let result=num1.sort((a,b)=>  a-b )
+// console.log(result);
+// let result2=num1.reverse((a,b)=> b-a)
+// console.log(result2);
+
+//every && and some mehod ||
+// let num=[10,20,30,40];
+// let result=num.every((value,index,array)=>
+// let result1=num.some((value,index,array)=>
+// {
+//  console.log(`value is ${value}`);
+//  console.log(`index is ${index}`);
+//  console.log(`array is ${array}`);
+
+// });
+// console.log(result);
+// console.log(result1);
+// let num=[10,20,30,40];
+// let result=num.some((value)=>
+// {
+//  return value>=90;
+// });
+// console.log(result);
+
+// const r1=[
+//    {id:1,food:"idly",quality:"good"},
+//     {id:2,food:"uppuma",quality:"normal"},
+// ];
+// let result=r1.some((value)=> 
+// {
+//     return  value.food==="idly";
+// });
+// console.log(result);
+
+ //filter method in js
+// const age=[13,45,67];
+// let result=age.filter((value)=>{
+//     return value>56;
+// });
+// const age1=[
+//     {id:1,item:"android",quality:23},
+//     {id:2,item:"iphone",quality:56},
+//     {id:1,item:"tv",quality:100},
+//     {id:1,item:"android latest",quality:55},
+
+//  ];
+// let result=age1.filter((value)=>{
+//     return value.quality>=78;
+// });
+// console.log(result);
+
+//find and filter method
+// const items=[
+//     {id:1,item:"android",quality:23},
+//     {id:2,item:"iphone",quality:56},
+//     {id:1,item:"tv",quality:100},
+//     {id:1,item:"android latest",quality:55},
+// ]
+// let result=items.filter((value)=>
+// {
+//     return value.quality>32;
+// })
+// console.log(result);
+// let result1=items.find((value)=>
+// {
+//     return value.quality>=32;
+// })
+// console.log(result1);
+
+//mapping method
+// const number=[10,20,30];
+// let result=number.map((value)=>
+// {
+//     return value=value*9;
+// });
+
+// const items=[
+//     {id:1,item:"android",quality:23},
+//     {id:2,item:"iphone",quality:56},
+//     {id:1,item:"tv",quality:100},
+//     {id:1,item:"android latest",quality:55},
+// ]
+// let result=items.map((value)=>
+// {
+//      return {id:4,item:"iot",quality:51} ;
+//     return value.item==="android";
+// });
+// console.log(result);
+
+//chaning method
+// const  protect=[
+//     {id:1,item:"android",quality:23,price:12000},
+//     {id:2,item:"iphone",quality:56,price:53000},
+//     {id:1,item:"tv",quality:10,price:45035},
+//     {id:1,item:"Androidlate",quality:55,price:11238},
+// ]
+// let sortprice=protect.sort((a,b)=> a.price-b.price )
+//   .sort((a,b)=>{
+//     if(a.item<b.item) return -1;
+//     else if (a.item>b.item) return 1;
+//     else return 0;
+// })
+//    .filter((value)=> value.price<50000)
+//    .map((value)=>{
+//    return value.item + " - " + value.price;
+// });
+// console.log( sortprice);
+
+// let sortname=sortprice.sort((a,b)=>{
+//     if(a.item<b.item) return -1;
+//     else if (a.item>b.item) return 1;
+//     else return 0;
+// })
+
+// let filter=sortname.filter((value)=> value.price<50000);
+
+// let result=filter.map((value)=>
+// {
+//    return value.item + " - " + value.price;
+// })
+
+//array reduce method
+// const marks=[10,20,30,40,50];
+// let total=marks.reduce((previous,current)=>
+// {
+//     return previous+current;
+// });
+// console.log(total);
+// const food=[
+//     {id:1,food:"idly",quality:"good",price:24},
+//     {id:2,food:"uppuma",quality:"normal",price:12}, 
+// ]
+// let result=food.reduce((previous,current)=>
+// {
+//     return previous.price+current.price;
+// })
+// let result=food.reduceRight((previous,current)=>{
+//     return previous.price+current.price;
+// })
+
+
+//function declartion vs expersion
+// let num1=2;
+// let num2=4;
+// type 1)
+// function Add()
+// {
+//     let num3=num1+num2;
+//     console.log(num3);
+// }
+// Add();
+
+// type 2)//anonmys function
+// Add=function Add()
+// {
+//     let num3=num1+num2;
+//    console.log(num3);
+// }
+// Add();
+
+// type 3)
+// Add=function(){
+//     let num3=num1+num2;
+//     console.log(num3);
+// }
+// console.log(Add);//code excute
+
+// function declartion()
+// {
+//     console.log("declartion");
+// }
+// declartion();
+//arrow function using anonyms
+// const addno=()=>{
+//     let num3=num1+num2;
+//     console.log(num3);
+// }
+// addno();
+
+//function hoisting
+
+// function Addno()
+// {
+//     console.log("function declaration");
+// };
+// Addnoe()
+// let Addnoe=function Addnoe(){
+//     console.log("function declaration");
+// };
+
+//function IIFE imediately invoke function expression
+// (function addno(num1,num2){
+//     let num3=num1+num2;
+//     console.log(num3);
+// }(10,290));
+
+//function arguments
+// function expression()//argument using
+
+// {
+//     console.log(arguments);
+// }
+// let result=expression(10,20,30,40,50);
+
+//rest operator
+// function expression(...arguments)
+// {   
+//     console.log(arguments);
+//   let r1=arguments.reduce((a,b)=> a+b )
+//    console.log(r1);
+// }
+// let result1=expression(10,20,30,40,50);
+// console.log(result1);
+
+//getter and setter
+// const number={
+//     firstname:"sudar",
+//     lastname:"mani",
+//     getname:function()
+//     {
+//         console.log(`firstname is ${this.firstname} lastname ${this.lastname}`);
+//     }
+// }
+// let result=number.getname();
+// const number={
+//     firstname:"sudar",
+//     lastname:"mani",
+//     get getname()
+//     {
+//         return(`firstname is ${this.firstname} lastname ${this.lastname}`);
+//     },
+//     set getname(value)
+//     {   if(value!="string")
+//        {
+//         let err=value.error();
+//         throw err;
+//        }
+//         // return(`${this.firstname} ${this.lastname}`);
+//     }
+// }
+// try
+// {
+//  let result2=number.getname="345";
+// }catch(er)
+// {
+// console.log(er);
+// }
+// let result=(number.getname);
+// console.log(result);
+// console.log(result2);
+  </script>
+</body>
+</html>
