@@ -65,7 +65,6 @@ function changeText() {
 
 </body>
 </html>
-================================================================
 
 With **JavaScript (JS)**, you can build almost anything in modern software development. It’s no longer just for simple web pages — it’s a **full-stack language**.
 
@@ -139,8 +138,7 @@ You can create browser-based and even 2D/3D games.
 * Phaser
 * Three.js
 
----
-==============================================================
+
 Simple Understanding
 
 👉 Learning JS features means:
@@ -223,7 +221,7 @@ OR external file:
 <script src="script.js"></script>
 ```
 
-==========================================================
+
 
 # 🟢 JavaScript Keywords: let and `const`
 
@@ -530,7 +528,7 @@ vijay
 * UI data access
 * Simple object handling
 
-==============================================================
+
 Here’s your **JavaScript Class & Object content (clean, corrected, seminar-ready)** with explanation and simple programs 👇
 
 ---
@@ -779,7 +777,6 @@ console.log(total);
 * `reduce()` → single value
 * chaining → powerful combination
 
-================================================================
 
 # 🟢 Function Declaration vs Function Expression
 
@@ -1373,7 +1370,7 @@ document.getElementById("btn").addEventListener("click", function() {
 | submit    | Form submit  |
 
 
-=============================================================
+
 
 
 # 🎤 Browser Object Model (BOM)
@@ -1614,7 +1611,7 @@ function off() {
 👉 DOM = **Control the webpage**
 
 
-======================================================================
+
 
 
 
