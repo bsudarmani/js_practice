@@ -72,7 +72,7 @@ Bootstrap helps developers to:
 
 ```html
 <button class="btn btn-primary">Click Me</button>
-
+```
 ## 3. Utility Classes
 
 - Easy spacing (margin, padding)  
@@ -96,3 +96,452 @@ Bootstrap helps developers to:
   - Firefox  
   - Edge  
   - Safari  
+
+# 📚 Bootstrap Topics List
+
+## 🎨 Basic Utilities
+
+- Typography  
+- Colors  
+- Buttons  
+- Margin  
+- Padding  
+- Breakpoints  
+- Tables  
+- Form Control  
+
+---
+
+## 🧩 Components
+
+- Accordion  
+- Alerts  
+- Cards  
+- Carousel  
+- Dropdowns  
+- Navbar  
+- Grid System  
+
+```html
+<!--1. Typography-->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-3">
+
+<h1 class="display-1">Heading</h1>
+<p class="lead">This is lead text</p>
+<p class="text-muted">Muted text</p>
+
+</body>
+</html> -->
+
+<!-- 2. Colors -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-3">
+
+<p class="text-primary">Primary</p>
+<p class="text-danger">Danger</p>
+<p class="bg-warning p-2">Background color</p>
+
+</body>
+</html> -->
+
+
+<!-- 3. Buttons -->
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-3">
+
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+
+</body>
+</html> -->
+
+
+<!-- 4. Margin -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="bg-primary text-white mx-5">Margin 5</div>
+
+</body>
+</html> -->
+
+
+<!-- 5. Padding -->
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="bg-success text-white p-5">Padding 5</div>
+
+</body>
+</html> -->
+
+
+<!-- 6. Breakpoints -->
+ <!-- <!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="bg-danger text-white p-3 d-none d-md-block">
+Visible only on medium and above
+</div>
+
+</body>
+</html> -->
+
+
+<!-- 7. Tables -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-3">
+
+<table class="table table-bordered">
+<tr><th>Name</th><th>Age</th></tr>
+<tr><td>asha</td><td>19</td></tr>
+</table>
+
+</body>
+</html> -->
+
+
+<!-- 8. Form Control -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-3">
+
+<input type="text" class="form-control" placeholder="Enter name">
+<button type="submit" class="m-5 btn btn-success">Submit</button>
+</body>
+</html> -->
+
+
+<!-- 9. Accordion -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#a1">
+      Click
+    </button>
+    <div id="a1" class="accordion-collapse collapse show">
+      <div class="accordion-body">Content</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html> -->
+
+
+<!-- 10. Alerts -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="p-3">
+
+<div class="alert alert-success">Success Alert</div>
+<div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+<script>
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('Nice, you triggered this alert message!', 'success')
+  })
+}
+</script>
+</body>
+</html> -->
+
+
+<!-- 11. Cards -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-3">
+
+<div class="card" style="width: 18rem;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKE8TXK5fQeOq1h6dRPoInwqnMkwHyAOeZWLrpem9gKzv7p44V7Hs1jIs&s" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+
+</body>
+</html> -->
+
+<!-- 12. Carousel -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5ftNGRPgD3pokIbzA5EoMPyZAVm6UlJV_uiJCgKNmWr1-k2XPtmealp8&s" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLHaCbYQvS0Gx8XV4bnctRldNtzzjIpWZA5c8LGPUtJw&s" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://photos5.appleinsider.com/gallery/52635-105565-16-inch-MacBook-Pro-with-M2-Max-xl.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</body>
+</html> -->
+
+
+<!-- 13. Dropdown -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="p-3">
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+
+</body>
+</html> -->
+
+<!-- 14. Navbar -->
+ 
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+</body>
+</html> -->
+
+
+<!-- Grid System -->
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Grid Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="container-fluid bg-dark text-white text-center p-3">
+  <h2>My Website</h2>
+</div>
+
+<!-- NAVBAR -->
+<div class="container-fluid bg-secondary text-white p-2 text-center">
+  Home | About | Contact
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container mt-4">
+  <div class="row">
+
+    <!-- LEFT SIDEBAR -->
+    <div class="col-md-3 bg-light p-3">
+      <h4>Sidebar</h4>
+      <p>Links</p>
+      <p>Menu</p>
+    </div>
+
+    <!-- MAIN AREA -->
+    <div class="col-md-6 bg-white p-3">
+      <h4>Main Content</h4>
+      <p>This is the main section of the website.</p>
+      <p>Using Bootstrap grid system.</p>
+    </div>
+
+    <!-- RIGHT SIDEBAR -->
+    <div class="col-md-3 bg-light p-3">
+      <h4>Right Side</h4>
+      <p>Ads</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="container-fluid bg-dark text-white text-center p-3 mt-4">
+  <p>Footer Section</p>
+</div>
+
+</body>
+</html>
