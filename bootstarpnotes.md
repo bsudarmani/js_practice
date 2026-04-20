@@ -122,7 +122,7 @@ Bootstrap helps developers to:
 - Navbar  
 - Grid System  
 
-```html
+
 <!--1. Typography-->
 <!-- <!DOCTYPE html>
 <html>
