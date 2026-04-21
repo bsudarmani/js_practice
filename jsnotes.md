@@ -888,7 +888,7 @@ addNo();
 
 
 
-# 🎤 ES6 Concepts Seminar Content
+# 🎤 ES6 Concepts  Content
 
 ---
 
@@ -1403,11 +1403,25 @@ BOM allows JavaScript to **interact with the browser (not HTML)**.
 ### 💻 Example:
 
 ```html
-var h = window.innerHeight;
-var w = window.innerWidth;
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Window Size</title>
+</head>
+<body>
 
-document.getElementById("h1").innerHTML =
-  "Height: " + h + " Width: " + w;
+<h1 id="h1"></h1>
+
+<script>
+  var h = window.innerHeight;
+  var w = window.innerWidth;
+
+  document.getElementById("h1").innerHTML =
+    "Height: " + h + " Width: " + w;
+</script>
+
+</body>
+</html>
 ```
 
 ### 🎯 Use
@@ -1422,15 +1436,34 @@ document.getElementById("h1").innerHTML =
 ### 💻 Example:
 
 ```html
-let newWin;
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Open and Close Window</title>
+</head>
+<body>
 
-function op() {
-  newWin = window.open("https://www.google.com", "_blank");
-}
+<button onclick="op()">Open Google</button>
+<button onclick="oc()">Close Window</button>
 
-function oc() {
-  newWin.close();
-}
+<script>
+  let newWin;
+
+  function op() {
+    newWin = window.open("https://www.google.com", "_blank");
+  }
+
+  function oc() {
+    if (newWin) {
+      newWin.close();
+    } else {
+      alert("No window opened!");
+    }
+  }
+</script>
+
+</body>
+</html>
 ```
 
 👉 Fix: store reference in variable
@@ -1446,6 +1479,19 @@ function oc() {
 ### 💻 Example:
 
 ```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Screen Info</title>
+</head>
+<body>
+
+<h2>Screen Information</h2>
+<p id="p1"></p>
+
+<button onclick="on()">Show Screen Info</button>
+
+<script>
 function on() {
   let info = 
     "Height: " + screen.height +
@@ -1455,6 +1501,10 @@ function on() {
 
   document.getElementById("p1").innerHTML = info;
 }
+</script>
+
+</body>
+</html>
 ```
 
 ---
@@ -1468,6 +1518,19 @@ function on() {
 ### 💻 Example:
 
 ```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Location Object</title>
+</head>
+<body>
+
+<h2>Location Information</h2>
+<p id="p1"></p>
+
+<button onclick="on()">Show Location Info</button>
+
+<script>
 function on() {
   let info =
     location.href + "<br>" +
@@ -1476,6 +1539,10 @@ function on() {
 
   document.getElementById("p1").innerHTML = info;
 }
+</script>
+
+</body>
+</html>
 ```
 
 ---
@@ -1489,6 +1556,19 @@ function on() {
 ### 💻 Example:
 
 ```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>History Object</title>
+</head>
+<body>
+
+<h2>Browser Navigation</h2>
+
+<button onclick="back()">Go Back</button>
+<button onclick="forward()">Go Forward</button>
+
+<script>
 function back() {
   history.back();
 }
@@ -1496,6 +1576,10 @@ function back() {
 function forward() {
   history.forward();
 }
+</script>
+
+</body>
+</html>
 ```
 
 ---
@@ -1509,10 +1593,25 @@ function forward() {
 ### 💻 Example:
 
 ```html
-document.getElementById("h1").innerHTML =
-  navigator.userAgent + "<br>" +
-  navigator.language + "<br>" +
-  navigator.onLine;
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navigator Object</title>
+</head>
+<body>
+
+<h2>Navigator Information</h2>
+<h1 id="h1"></h1>
+
+<script>
+  document.getElementById("h1").innerHTML =
+    navigator.userAgent + "<br>" +
+    navigator.language + "<br>" +
+    navigator.onLine;
+</script>
+
+</body>
+</html>
 ```
 
 ---
@@ -1528,6 +1627,19 @@ document.getElementById("h1").innerHTML =
 ### 💻 Example:
 
 ```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prompt Example</title>
+</head>
+<body>
+
+<h2>User Greeting</h2>
+<p id="p1"></p>
+
+<button onclick="on()">Enter Name</button>
+
+<script>
 function on() {
   let name = prompt("Enter your name");
 
@@ -1539,6 +1651,10 @@ function on() {
       "No name entered";
   }
 }
+</script>
+
+</body>
+</html>
 ```
 
 ---
@@ -1550,6 +1666,19 @@ function on() {
 ### 🟢 a) `setInterval()`
 
 ```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Digital Clock</title>
+</head>
+<body>
+
+<h2>Live Time</h2>
+<h1 id="h1"></h1>
+
+<button onclick="stop1()">Stop Clock</button>
+
+<script>
 let t = setInterval(showTime, 1000);
 
 function showTime() {
@@ -1560,6 +1689,10 @@ function showTime() {
 function stop1() {
   clearInterval(t);
 }
+</script>
+
+</body>
+</html>
 ```
 
 ---
@@ -1567,6 +1700,19 @@ function stop1() {
 ### 🔵 b) `setTimeout()`
 
 ```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>setTimeout Example</title>
+</head>
+<body>
+
+<h2>Show Date After 1 Second</h2>
+<h1 id="h1"></h1>
+
+<button onclick="off()">Cancel Timeout</button>
+
+<script>
 let t = setTimeout(fun, 1000);
 
 function fun() {
@@ -1577,6 +1723,10 @@ function fun() {
 function off() {
   clearTimeout(t);
 }
+</script>
+
+</body>
+</html>
 ```
 
 ---
